@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0A40DC4-1F01-4BF0-8B6C-C2228DF2DB4A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApp1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApp1</RootNamespace>
+    <AssemblyName>WindowsApp1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WebForms.10.0.40219.1\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include=".Designer.vb">
+      <DependentUpon>1_Homepage.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_Homepage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="9_ChangePassword.Designer.vb">
+      <DependentUpon>9_ChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="9_ChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2_Employee_Details.Designer.vb">
+      <DependentUpon>2_Employee_Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2_Employee_Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3_Items_Details.Designer.vb">
+      <DependentUpon>3_Items_Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3_Items_Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6_Grocery_Items.Designer.vb">
+      <DependentUpon>6_Grocery_Items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="6_Grocery_Items.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0_Login page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0_Login page.Designer.vb">
+      <DependentUpon>0_Login page.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpReport.Designer.vb">
+      <DependentUpon>frmEmpReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemsReport.Designer.vb">
+      <DependentUpon>frmItemsReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemsReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderReport.Designer.vb">
+      <DependentUpon>frmOrderReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesReport.Designer.vb">
+      <DependentUpon>frmSalesReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStockReport.Designer.vb">
+      <DependentUpon>FrmStockReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStockReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ModProject.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OrderDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prgBar.Designer.vb">
+      <DependentUpon>prgBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="prgBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5_Sales_Order_Details.Designer.vb">
+      <DependentUpon>5_Sales_Order_Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5_Sales_Order_Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4_Stock_Details.Designer.vb">
+      <DependentUpon>4_Stock_Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4_Stock_Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7_Grocery_Stock.Designer.vb">
+      <DependentUpon>7_Grocery_Stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="7_Grocery_Stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StockDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockDataSet1.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="1_Homepage.resx">
+      <DependentUpon>1_Homepage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="9_ChangePassword.resx">
+      <DependentUpon>9_ChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2_Employee_Details.resx">
+      <DependentUpon>2_Employee_Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3_Items_Details.resx">
+      <DependentUpon>3_Items_Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6_Grocery_Items.resx">
+      <DependentUpon>6_Grocery_Items.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0_Login page.resx">
+      <DependentUpon>0_Login page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpReport1.rdlc" />
+    <EmbeddedResource Include="frmEmpReport.resx">
+      <DependentUpon>frmEmpReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItemsReport.resx">
+      <DependentUpon>frmItemsReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderReport.resx">
+      <DependentUpon>frmOrderReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesReport.resx">
+      <DependentUpon>frmSalesReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStockReport.resx">
+      <DependentUpon>FrmStockReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemReport1.rdlc" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderReport1.rdlc" />
+    <EmbeddedResource Include="prgBar.resx">
+      <DependentUpon>prgBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5_Sales_Order_Details.resx">
+      <DependentUpon>5_Sales_Order_Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4_Stock_Details.resx">
+      <DependentUpon>4_Stock_Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7_Grocery_Stock.resx">
+      <DependentUpon>7_Grocery_Stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesReport1.rdlc" />
+    <EmbeddedResource Include="StockReport1.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EmpDataSet1.xsc">
+      <DependentUpon>EmpDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EmpDataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmpDataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="EmpDataSet1.xss">
+      <DependentUpon>EmpDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ItemDataSet1.xsc">
+      <DependentUpon>ItemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ItemDataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ItemDataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ItemDataSet1.xss">
+      <DependentUpon>ItemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="OrderDataSet1.xsc">
+      <DependentUpon>OrderDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OrderDataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrderDataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="OrderDataSet1.xss">
+      <DependentUpon>OrderDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SalesDataSet1.xsc">
+      <DependentUpon>SalesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SalesDataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesDataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SalesDataSet1.xss">
+      <DependentUpon>SalesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StockDataSet1.xsc">
+      <DependentUpon>StockDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StockDataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockDataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="StockDataSet1.xss">
+      <DependentUpon>StockDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\login image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login pic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login pic1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimze.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home pic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vb.net.png" />
+    <None Include="Resources\item.png" />
+    <None Include="Resources\item new.png" />
+    <None Include="Resources\employee.png" />
+    <None Include="Resources\sales.png" />
+    <None Include="Resources\sales new.png" />
+    <None Include="Resources\sales1.png" />
+    <None Include="Resources\stocks.png" />
+    <None Include="Resources\vb.net %281%29.png" />
+    <None Include="Resources\password.png" />
+    <None Include="Resources\WhatsApp Image 2022-05-19 at 10.34.38 AM.jpeg" />
+    <None Include="Resources\pexels-david-skyrius-2129796.jpg" />
+    <None Include="Resources\menu.jpg" />
+    <None Include="Resources\home.jpg" />
+    <None Include="Resources\report.jpg" />
+    <None Include="Resources\Food Order.jpg" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
